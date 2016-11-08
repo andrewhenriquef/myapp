@@ -28,6 +28,6 @@ export default Ember.Route.extend({
     model: function(){
         return Ember.$.getJSON('cars.json').then(function(data){
             return data;
-        })
+        });
     }
 });
