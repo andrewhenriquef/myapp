@@ -18,7 +18,9 @@ Router.map(function() {
     })
   */
   this.route('events');
-  this.route('cars');
+  this.route('cars', function() {
+    this.route('new');
+  });
   this.route('users');
 });
 
