@@ -1,1 +1,8 @@
 <h1> Cars new </h1>
+
+<form {{action 'addCar' on='submit'}}>
+    Make: {{input type='text' value=carMake}}
+    Model: {{input type='text' value=carModel}}
+    year: {{input type='text' value=carYear}}
+<button {{input type='submit' value='submit'}}>Save</button>
+</form>
