@@ -25,11 +25,11 @@ var cars = [
 ]
 */
 export default Ember.Route.extend({
-    model: function(){
+    /*model: function(){
         return this.store.findAll('car');
 
-        /*return Ember.$.getJSON('cars.json').then(function(data){
+        return Ember.$.getJSON('cars.json').then(function(data){
             return data; 
-        });*/
-    }
+        });
+    }*/
 });
