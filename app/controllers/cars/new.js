@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
                 year: this.get('carYear')
                 
 
-            })
+            });
 
             newCar.save();
             self.transitionToRoute('cars');
