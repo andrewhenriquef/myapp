@@ -22,7 +22,7 @@ Router.map(function() {
   this.route('cars', function() {
     this.route('index', { path: '/' });
     this.route('new');
-    this.route('edit');
+    this.route('edit',{path: '/edit/:car_id'});
   });
  
   this.route('users');

@@ -1,1 +1,8 @@
-{{outlet}}
+<h1> Car Edit </h1>
+
+<form {{action 'editCar' model.id on='submit'}}>
+    Make: {{input type='text' value=model.make}}
+    Model: {{input type='text' value=model.model}}
+    year: {{input type='text' value=model.year}}
+<button {{input type='submit' value='submit'}}>Save</button>
+</form>

@@ -6,6 +6,20 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyDMOAxqnnIAZJ42kxz4Smc_dssjIqunijU",
+      authDomain: "mycars-10502.firebaseapp.com",
+      databaseURL: "https://mycars-10502.firebaseio.com",
+      storageBucket: "mycars-10502.appspot.com",
+      messagingSenderId: "703996006369"
+
+    },
+  
+    /*
+    contentSecurityPolicy:{'connect-src':"'self' wss://*.firebaseio.com"},
+    firebase: 'https://mycars-10502.firebaseio.com/',
+    baseURL:'/',
+ */
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -29,9 +43,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    /*
     ENV.contentSecurityPolicy = {
       'script-src': "'self' https://api.github.com"
     }
+    */
   }
 
   if (environment === 'test') {
