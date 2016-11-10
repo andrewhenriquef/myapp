@@ -4,13 +4,18 @@
 
 {{outlet}}
  <hr>
-<ul>
+
+ 
+<ul class="list-group">
 	{{#each model as |car|}}
-		<li>
+		<li class="list-group-item">
 			
             {{car.year}} - {{car.make}} - {{car.model}} 
-			
-            - {{#link-to 'cars.edit' car.id}}Edit Car{{/link-to}}
+            
+            {{#link-to 'cars.edit' car.id tagName='button'}}
+
+                Edit Car
+            {{/link-to}}
             
             <button{{action 'deleteCar' car.id}}>
                  Delete
