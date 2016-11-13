@@ -1,5 +1,14 @@
 <h1> Welcome to index</h1>
 
-{{#my-cool-component title='Component'}}
-    <p>This is my new Component</p>
-{{/my-cool-component}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{my-github-repos}}
+        </div>
+        <div class="col-md-8">
+            {{#my-cool-component title='Component'}}
+                <p>This is my new Component</p>
+            {{/my-cool-component}}
+        </div>
+    </div>
+</div>
