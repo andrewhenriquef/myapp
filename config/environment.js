@@ -6,6 +6,9 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'script-src': "'self' https://api.github.com"
+    },
     firebase: {
       apiKey: "AIzaSyDMOAxqnnIAZJ42kxz4Smc_dssjIqunijU",
       authDomain: "mycars-10502.firebaseapp.com",
